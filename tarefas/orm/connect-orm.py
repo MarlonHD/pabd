@@ -17,3 +17,10 @@ metadata.reflect(bind=engine)
 projeto_tb = Table('projeto', metadata, autoload_with=engine)
 atividade_tb = Table('atividade', metadata, autoload_with=engine)
 
+
+
+with engine.connect() as conn:
+    #------------- A -------------
+    a = conn.execute(
+        atividade_tb.insert().values(descricao='BD - Tarefa ORM', projeto=3, data_inicio='2024-04-22', data_fim='2024-04-23')
+    )
