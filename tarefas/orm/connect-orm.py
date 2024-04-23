@@ -29,3 +29,15 @@ with engine.connect() as conn:
     b = conn.execute(
         projeto_tb.update().values(responsavel=11).where(projeto_tb.c.codigo == 3)
     )
+
+    #------------- C -------------
+    projetos = conn.execute(projeto_tb.select())
+
+    for proj in projetos:
+        print("PROJETO", proj[0])
+        print(proj)
+        print("\tATIVIDADES:")
+        for atv in conn.execute(atividade_tb.select().where(atividade_tb.c.projeto == proj[0])):
+            print("\t",atv)
+        print("\n")
+    
