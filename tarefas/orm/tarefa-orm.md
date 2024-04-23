@@ -6,3 +6,9 @@ ODBC (Open Database Connectivity) é uma interface padrão que possibilita que a
 
 ## Resumo ORM
 ORM (Object-Relational Mapping) é uma técnica que permite manipular bancos de dados relacionais usando objetos de programação em vez de consultas SQL diretas. No contexto do Python, a biblioteca SQLAlchemy simplifica essa interação, permitindo definir modelos de dados como classes Python e manipular o banco de dados por meio desses modelos. SQLAlchemy automatiza a tradução entre objetos Python e instruções SQL necessárias para operar nos dados armazenados, simplificando o desenvolvimento de aplicativos, aumentando a portabilidade do código e reduzindo a necessidade de escrever SQL manualmente.
+
+## Links
+
+- Scripts da criação das tabelas e do povoamento: [atividades_db](https://github.com/tacianosilva/bsi-tasks/tree/master/database/scripts/AtividadesBD/postgres)
+- Código ODBC: [connect-odbc.py](https://github.com/MarlonHD/pabd/blob/main/tarefas/orm/connect-odbc.py)
+- Código ORM: [connect-orm.py](https://github.com/MarlonHD/pabd/blob/main/tarefas/orm/connect-orm.py)
