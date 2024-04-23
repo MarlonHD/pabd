@@ -21,5 +21,24 @@ conn.commit()
 cur.execute("UPDATE projeto SET responsavel = %s WHERE codigo = %s", (14, 3))
 conn.commit
 
+#------------- C -------------
+cur.execute("SELECT * FROM projeto ORDER BY codigo")
+projetos = cur.fetchall()
+
+print("----------------------")
+
+cur.execute("SELECT * FROM atividade ORDER BY codigo")
+atividades = cur.fetchall()
+
+for proj in projetos:
+    print("PROJETO", proj[0])
+    print(proj)
+    print("\tATIVIDADES:")
+    for atv in atividades:
+        if(proj[0] == atv[2]):
+            print("\t",atv)
+    print("\n")
+
+
 cur.close()
 conn.close()
