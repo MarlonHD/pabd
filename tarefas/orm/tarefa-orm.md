@@ -1,7 +1,7 @@
 ## Resumo ODBC
-O ODBC (Open Database Connectivity) é uma API padronizada da indústria que permite que aplicativos acessem e manipulem dados em diferentes bancos de dados utilizando a linguagem de consulta estruturada - SQL. O ODBC funciona como uma camada de abstração entre o aplicativo e o banco de dados subjacente, ele possibilita que desenvolvedores escrevam código independente do banco de dados específico.
+O psycopg2 é uma biblioteca Python usada para acessar bancos de dados PostgreSQL, conhecida por sua eficiência, confiabilidade e aderência ao PEP 249, o que facilita sua integração com outras bibliotecas Python de banco de dados.
 
-Para utilizar o ODBC em Python, o primeiro passo é estabelecer uma conexão com o banco de dados através do método `pyodbc.connect()`, fornecendo os detalhes de conexão necessários. Em seguida, cria-se um cursor para executar consultas SQL e manipular os resultados conforme necessário. Após a conclusão das operações desejadas, é importante confirmar as alterações e, por fim, fechar tanto a conexão quanto o cursor para liberar recursos do sistema.
+ODBC (Open Database Connectivity) é uma interface padrão que possibilita que aplicativos se conectem e interajam com diferentes tipos de bancos de dados relacionais de maneira consistente. Desenvolvida pela Microsoft nos anos 90, a ODBC é amplamente adotada e é suportada por diversos sistemas operacionais e linguagens de programação. Embora o psycopg2 seja específico para o PostgreSQL, existem bibliotecas como pyodbc que permitem acessar vários bancos de dados usando ODBC em Python.
 
 
 ## Resumo ORM
