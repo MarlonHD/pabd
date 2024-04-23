@@ -24,3 +24,8 @@ with engine.connect() as conn:
     a = conn.execute(
         atividade_tb.insert().values(descricao='BD - Tarefa ORM', projeto=3, data_inicio='2024-04-22', data_fim='2024-04-23')
     )
+
+    #------------- B -------------
+    b = conn.execute(
+        projeto_tb.update().values(responsavel=11).where(projeto_tb.c.codigo == 3)
+    )
